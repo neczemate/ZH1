@@ -16,12 +16,12 @@ public class MapParserTest {
 
     private static final List<String> RAW_MAP = List.of(
             "01",
-            "20"
+            "10"
     );
 
     private static final int[][] MAP = {
             {0,1},
-            {2,0}
+            {1,0}
     };
 
     private static final boolean[][] FIXED = {
@@ -42,10 +42,9 @@ public class MapParserTest {
     public void testParseMapShouldReturnValidMapVORepresentation() throws MapParseException {
         //given in setup
 
-        //when
+        // when
         MapVO result = underTest.parseMap(RAW_MAP);
-        //then
-
+        // then
         assertEquals(EXPECTED_MAP,result);
     }
 }

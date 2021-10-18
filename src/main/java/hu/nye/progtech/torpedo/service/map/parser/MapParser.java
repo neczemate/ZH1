@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class MapParser {
 
-    private static final String VALID_ROW_REGEX = "[0-9]+";
+    private static final String VALID_ROW_REGEX = "[0-1]+";
 
     private int numberOfRows;
     private int numberOfColumns;
